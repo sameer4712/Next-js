@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default async function Sluged({params}:{params:Promise<{slug:string}>}) {
+export default async function Sluged({params}:{params:Promise<{slug:string}>},) {
     const {slug} = await params;
     if(slug?.length ===2){
         return <h1>viewing docs for feauture {slug[0]} and concept {slug[1]}</h1>
